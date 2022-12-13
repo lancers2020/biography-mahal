@@ -1,0 +1,219 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: white;
+    margin: 0;
+}
+.parent-wrapper{
+    display: flex;
+    height: 100vh;
+}
+.top-left-wrapper{
+    width: 25vw;
+    height: 70vh;
+    background-color: #FAEAB1;
+
+    margin: 10px;
+    border-radius: 15px;
+}
+.right-wrapper{
+    width: 75vw;
+    background-color: rgb(246, 214, 169);
+
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* left-wrapper */
+.profile-wrapper{
+    background-color: #893F04;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-picture{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.profile-picture>img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid black;
+    padding: 8px;
+    
+    transition: .3s;
+}
+.profile-name{
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/* categories-wrapper */
+.categories-wrapper{
+    padding-top: 20px;
+}
+.categories-wrapper>a{
+    text-decoration: none;
+    color: black;
+}
+.categories{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    padding: 10px;
+    margin: 5px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+}
+.categories+.categories{
+    margin-top: 5px;
+}
+
+/* left animation */
+.profile-picture:hover>img{
+    transform: scale(1.09);
+    transition: .3s;
+    padding: 10px;
+    border: 5px solid #C58940;
+}
+.categories:hover{
+    transform: scale(1.03);
+    transition: .3s;
+    background-color: white;
+}
+
+/* bottom-left wrapper */
+.bottom-left-wrapper{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 23vw;
+    height: 180px;
+
+    background-color: #cccccc;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+.motto-wrapper{
+    background-color: peachpuff;
+    font-family: cursive;
+    width: fit-content;
+    padding: 5px;
+    box-shadow: 0px 8px 0 5px;
+    margin: auto;
+    transform: rotate(-5deg);
+}
+.details-wrapper{
+    display: flex;
+}
+.details-wrapper>.label{
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: -5px;
+    margin-top: -20px;
+}
+.details>.top{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-family: cursive;
+}
+.details>.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+/* icons */
+.details>.bottom>div>img{
+    width: 20px;
+    height: 20px;
+}
+.details>.bottom>div{
+    margin: 5px;
+    padding: 5px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details>.bottom>div:nth-child(5){
+    font-weight: bold;
+}
+
+
+/* right wrapper */
+.right-wrapper>div{
+    margin: 3px;
+    border-radius: 10px;
+    border: 5px dashed rgb(93, 40, 40);
+    height: 93vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+    /* background: #f1f1f1; */
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: black;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: white;
+}
+  
+
+.right-content-wrapper{
+    height: 700px;
+    /* background-color: rgb(255, 196, 196); */
+}
+.page-label{
+    text-align: center;
+    margin: 0px 0 200px 0;
+    font-size: 100px;
+    font-family: 'Passions Conflict', cursive;
+    /* background-color: brown; */
+}
+.page-content{
+    font-size: 20px;
+    /* background-color: green; */
+    padding: 20px;
+    line-height: 40px;
+}
